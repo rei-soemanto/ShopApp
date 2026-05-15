@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CartItem: Equatable {
+struct CartItem {
     let product: Product
     var quantity: Int
 }

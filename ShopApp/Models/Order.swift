@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Order: Equatable {
+struct Order {
     let items: [CartItem]
     let total: Double
 }
