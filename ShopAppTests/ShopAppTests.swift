@@ -173,7 +173,7 @@ final class ShopAppTests: XCTestCase {
         XCTAssertFalse(products.isEmpty, "Mock repository should return list of available products.")
     }
     
-    func testSubmitOrder() async throws { 
+    func testSubmitOrder() async throws { 	
         let order = Order(items: [], total: 100)
         let result = try await mockRepo.submitOrder(order: order)
         

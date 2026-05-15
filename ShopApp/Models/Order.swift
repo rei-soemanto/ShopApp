@@ -10,8 +10,4 @@ import Foundation
 struct Order: Equatable {
     let items: [CartItem]
     let total: Double
-    
-    static func == (lhs: Order, rhs: Order) -> Bool {
-        return lhs.total == rhs.total && lhs.items == rhs.items
-    }
 }

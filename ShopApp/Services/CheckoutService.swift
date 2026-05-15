@@ -53,7 +53,7 @@ extension CheckoutService {
     
     func checkout(cart: [CartItem], shippingType: ShippingType) async throws -> Bool {
         let baseTotal = applyDiscount(total: calculateTotal(cart: cart))
-        let finalTotal = baseTotal + calculateShippingFee(type: shippingType) 
+        let finalTotal = baseTotal + calculateShippingFee(type: shippingType)
         
         guard finalTotal > 0 else {
             throw NSError(domain: "CheckoutError", code: 400)
